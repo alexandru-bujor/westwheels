@@ -17,6 +17,19 @@ interface CarDetailPageProps {
   params: Promise<{ id: string; locale: string }>;
 }
 
+// Generate static params for all locales and car IDs
+export async function generateStaticParams() {
+  const locales = ['en']; // Add more locales if needed: 'en', 'pl', 'de', etc.
+  const carIds = mockCars.map((car) => car.id);
+  
+  return locales.flatMap((locale) =>
+    carIds.map((id) => ({
+      locale,
+      id,
+    }))
+  );
+}
+
 export default async function CarDetailPage({ params }: CarDetailPageProps) {
   const { id, locale } = await params;
   
