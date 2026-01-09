@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { SearchResultsFilters, FilterState } from '@/components/search/SearchResultsFilters';
 import { Pagination } from '@/components/search/Pagination';
 import { ViewToggle } from '@/components/search/ViewToggle';
@@ -8,24 +8,62 @@ import { CarListingItem } from '@/features/cars/components/CarListingItem';
 import { getAllMockCars, filterCars } from '@/lib/mockDataUtils';
 import './searchResults.css';
 
-interface SearchResultsPageClientProps {
-  searchParams: { [key: string]: string | string[] | undefined };
+// Helper to parse URL search params
+function getSearchParams(): { [key: string]: string } {
+  if (typeof window === 'undefined') return {};
+  const params = new URLSearchParams(window.location.search);
+  const result: { [key: string]: string } = {};
+  params.forEach((value, key) => {
+    result[key] = value;
+  });
+  return result;
 }
 
-export function SearchResultsPageClient({ searchParams }: SearchResultsPageClientProps) {
+export function SearchResultsPageClient() {
   const [view, setView] = useState<'grid' | 'list'>('grid');
   const [currentPage, setCurrentPage] = useState(1);
+  const [searchParams, setSearchParams] = useState<{ [key: string]: string }>({});
+  
+  // Read search params from URL on mount and when URL changes
+  useEffect(() => {
+    const params = getSearchParams();
+    setSearchParams(params);
+    
+    // Listen for popstate (back/forward navigation)
+    const handlePopState = () => {
+      const newParams = getSearchParams();
+      setSearchParams(newParams);
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
   const [filters, setFilters] = useState<FilterState>({
-    status: (searchParams.status as string) || 'All',
-    type: (searchParams.type as string) || 'Automobile',
-    make: (searchParams.make as string) || 'All',
-    model: (searchParams.model as string) || 'All',
-    yearFrom: (searchParams['year-from'] as string) || '',
-    yearTo: (searchParams['year-to'] as string) || '',
-    auctionType: (searchParams['auction-type'] as string) || 'All',
+    status: searchParams.status || 'All',
+    type: searchParams.type || 'Automobile',
+    make: searchParams.make || 'All',
+    model: searchParams.model || 'All',
+    yearFrom: searchParams['year-from'] || '',
+    yearTo: searchParams['year-to'] || '',
+    auctionType: searchParams['auction-type'] || 'All',
     copart: searchParams.copart !== 'false',
     iaai: searchParams.iaai !== 'false',
   });
+
+  // Update filters when searchParams change
+  useEffect(() => {
+    setFilters({
+      status: searchParams.status || 'All',
+      type: searchParams.type || 'Automobile',
+      make: searchParams.make || 'All',
+      model: searchParams.model || 'All',
+      yearFrom: searchParams['year-from'] || '',
+      yearTo: searchParams['year-to'] || '',
+      auctionType: searchParams['auction-type'] || 'All',
+      copart: searchParams.copart !== 'false',
+      iaai: searchParams.iaai !== 'false',
+    });
+  }, [searchParams]);
 
   const itemsPerPage = 20;
   const allCars = getAllMockCars();

@@ -11,17 +11,18 @@ const lato = Lato({
 export const metadata: Metadata = {
   title: "WhestWheels - Car Auctions With Shipping Service",
   description: "Buying & Shipping American Automobiles. With Home Delivery option available never been so fast and so easy",
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-    userScalable: true,
-  },
-  themeColor: '#007bff',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
   },
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  themeColor: '#007bff',
 };
 
 export default function RootLayout({
