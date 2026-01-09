@@ -1,0 +1,444 @@
+/* ================================
+   CARD
+================================ */
+
+.card {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 225px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* ================================
+   GALLERY / CAROUSEL
+================================ */
+
+.imageWrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.carouselProduct {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.carouselInner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+.carouselItem {
+    display: none;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.6s ease;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.carouselItem.active {
+    display: block;
+}
+
+.carouselHome {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    min-height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Ensure all images have no margins */
+.imageWrap img,
+.gallery img,
+.carouselInner img,
+.carouselItem,
+.carouselHome {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none;
+}
+
+/* Carousel Indicators */
+.carouselIndicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+
+.carouselIndicators li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carouselIndicators li.active {
+    background: #fff;
+    width: 20px;
+    border-radius: 4px;
+}
+
+/* Carousel Controls */
+.carouselControl {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 20;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.carouselControl:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.carouselControlPrev {
+    left: 10px;
+}
+
+.carouselControlNext {
+    right: 10px;
+}
+
+.carouselControl img {
+    filter: brightness(0) invert(1);
+}
+
+.runSvg {
+    width: 10px;
+    height: 15px;
+}
+
+/* ================================
+   CAR INFO SECTION - Single Row with Label-Value Pairs
+================================ */
+
+.carInfoSection {
+    padding: 12px 15px;
+    width: 100%;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.infoRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    row-gap: 4px;
+}
+
+.infoLabel {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6c757d;
+    padding-right: 4px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.infoValue {
+    font-size: 13px;
+    font-weight: 400;
+    color: #212529;
+    padding-right: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.estimatedCost {
+    color: #007bff;
+    font-weight: 500;
+}
+
+/* ================================
+   BOTTOM WRAPPER
+================================ */
+
+.bottomWr {
+    padding: 12px 15px;
+    border-top: 1px solid #e9ecef;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: auto;
+}
+
+/* ================================
+   TIMER
+================================ */
+
+.itemTime {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    color: #6c757d;
+    padding: 0;
+    width: 100%;
+}
+
+.itemTime img {
+    width: 20px;
+    height: 20px;
+}
+
+.indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #28a745;
+    display: inline-block;
+}
+
+/* ================================
+   PRICE (ROW 4)
+================================ */
+
+.priceBox {
+    background: #F5F6F8;
+    padding: 5px;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 6px;
+    margin: 0;
+    gap: 5px;
+    width: 100%;
+}
+
+.priceBox.current {
+    color: #007bff;
+}
+
+.priceBox.buyNow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 4px 8px;
+    color: #212529;
+    text-align: center;
+}
+
+.priceLabel {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6c757d;
+    text-align: center;
+}
+
+.priceValue {
+    font-size: 15px;
+    font-weight: 600;
+    color: #212529;
+    text-align: center;
+}
+
+.priceBox.buyNow .priceValue:first-of-type {
+    color: #212529;
+}
+
+.buyNowPrice {
+    color: #28a745;
+    font-weight: 700;
+}
+
+/* ================================
+   RESPONSIVE TEXT VISIBILITY
+================================ */
+
+.mobileHide {
+    display: inline;
+}
+
+.desktopHide {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobileHide {
+        display: none;
+    }
+    
+    .desktopHide {
+        display: inline;
+    }
+    
+    .carouselHome {
+        max-height: 180px;
+    }
+    
+    .carInfoSection {
+        padding: 10px 12px;
+    }
+    
+    .infoLabel {
+        font-size: 12px;
+    }
+    
+    .infoValue {
+        font-size: 12px;
+        padding-right: 12px;
+    }
+    
+    .itemTime,
+    .priceBox {
+        padding: 0 12px 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    .carInfoSection {
+        padding: 8px 10px;
+    }
+    
+    .infoRow {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    
+    .infoLabel {
+        font-size: 11px;
+        padding-right: 0;
+        margin-right: 4px;
+    }
+    
+    .infoValue {
+        font-size: 11px;
+        padding-right: 0;
+        margin-bottom: 4px;
+    }
+    
+    .infoRow > div {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+/* ================================
+   GRID / ROW LAYOUT (for parent container)
+================================ */
+
+.psaRow {
+    display: grid;
+    grid-template-columns: repeat(5, 225px);
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.psaRow.recent.homePage {
+    margin-bottom: 50px;
+}
+
+/* Large Desktop: 5 items per row */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .psaRow {
+        grid-template-columns: repeat(5, 225px);
+    }
+}
+
+/* Desktop: 4 items per row */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .psaRow {
+        grid-template-columns: repeat(4, 225px);
+    }
+}
+
+/* Tablet: 3 items per row */
+@media (min-width: 768px) and (max-width: 991px) {
+    .psaRow {
+        grid-template-columns: repeat(3, 225px);
+    }
+}
+
+/* Mobile: 2 items per row */
+@media (min-width: 576px) and (max-width: 767px) {
+    .psaRow {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+}
+
+/* Small Mobile: 1 item per row */
+@media (max-width: 575px) {
+    .psaRow {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+}

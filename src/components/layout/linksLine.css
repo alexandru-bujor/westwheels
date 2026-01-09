@@ -1,0 +1,79 @@
+/* Links Line Section - Navigation Bar - Matching bid.cars exactly */
+.links_line {
+  background-color: #293542;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0;
+}
+
+.links_line .container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.links_line_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+  gap: 0;
+}
+
+.links_line ul.menu {
+  display: flex;
+}
+
+.links_line ul.quick_links {
+  display: flex;
+}
+
+.links_line ul.menu li a,
+.links_line ul.quick_links li a {
+  color: #fff;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.links_line ul li.devided a,
+.links_line ul.quick_links li a {
+  border-right: 1px solid #435061;
+}
+
+.links_line ul.quick_links li:last-child a {
+  border: none;
+}
+
+.links_line ul li a:hover,
+.links_line ul.quick_links li a:hover {
+  background: #36414F;
+  text-decoration: none;
+}
+
+.links_line > nav.navigation > ul > li,
+.links_line ul.quick_links > li {
+  position: relative;
+}
+
+.links_line nav.navigation > ul > li > ul,
+.links_line ul.quick_links > li > ul {
+  min-width: auto !important;
+  border-radius: 0 0 6px 6px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1023px) {
+  .links_line {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .links_line_content {
+    height: 48px;
+    gap: 10px;
+  }
+}

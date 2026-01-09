@@ -1,0 +1,52 @@
+/* Top Bar Section */
+.top_bar {
+  background-color: #293542;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0;
+}
+
+.top_bar .container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.top_bar_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  gap: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1023px) {
+  .top_bar_content {
+    height: 70px;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top_bar .container {
+    padding: 0 12px;
+  }
+
+  .top_bar_content {
+    height: 65px;
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .top_bar .container {
+    padding: 0 10px;
+  }
+
+  .top_bar_content {
+    height: 60px;
+    gap: 6px;
+  }
+}
+

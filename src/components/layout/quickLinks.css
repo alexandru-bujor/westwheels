@@ -1,0 +1,112 @@
+/* Quick Links Component Styles - Matching bid.cars exactly */
+.quick-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.quick-link-item {
+  position: relative;
+}
+
+.quick-link {
+  color: #fff;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  transition: all 0.3s;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.quick-link-item a {
+  border-right: 1px solid #435061;
+}
+
+.quick-link-item:last-child a {
+  border: none;
+}
+
+.quick-link:hover {
+  background: #36414F;
+  text-decoration: none;
+  color: #fff;
+}
+
+.quick-link-icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.quick-link:hover .quick-link-icon {
+  opacity: 1;
+}
+
+.quick-link-chevron {
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.quick-link:hover .quick-link-chevron {
+  opacity: 1;
+}
+
+.contacts-dropdown img {
+  max-width: 20px;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu-content .quick-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.mobile-menu-content .quick-link-item {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu-content .quick-link-item:last-child {
+  border-bottom: none;
+}
+
+.mobile-menu-content .quick-link {
+  width: 100%;
+  padding: 16px 20px;
+  border-right: none !important;
+  justify-content: space-between;
+}
+
+.mobile-menu-content .quick-link:hover {
+  background: #36414F;
+}
+
+.mobile-menu-content .quick-link-item.active .quick-link {
+  background: #36414F;
+}
+
+@media (max-width: 768px) {
+  .no-mobile {
+    display: none;
+  }
+
+  .quick-link {
+    padding: 14px 16px;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,212 @@
+/* ===============================
+   Search Bar – bid.cars–style
+   =============================== */
+
+.search-cross {
+    width: 89%;
+    min-width: 300px;
+    position: relative;
+}
+
+/* Main container */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    background: #2b2f36;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+/* ===============================
+   Type Selector (Current / Archived)
+   =============================== */
+
+.type-selector {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    background: #3a3f46;
+    border-radius: 100px 0 0 100px;
+    gap: 2px;
+}
+
+.type-selector-link {
+    font-size: 13px;
+    font-weight: 500;
+    color: #cfd6e4;
+    padding: 0 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.type-selector-link--active {
+    display: block;
+    width: 63px;
+}
+
+.type-selector-link--inactive {
+    display: none;
+}
+
+.type-selector-chevron {
+    width: 11px;
+    height: 11px;
+    margin-left: 4px;
+    color: #9aa3b2;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+/* Optional rotation when Archived is active */
+.type-selector-chevron--rotated {
+    transform: rotate(180deg);
+}
+
+/* ===============================
+   Search Input
+   =============================== */
+
+.search-input {
+    flex: 1;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 14px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.search-input::placeholder {
+    color: #9aa3b2;
+}
+
+/* ===============================
+   Search Count
+   =============================== */
+
+.search-count {
+    position: absolute;
+    right: 46px;
+    color: #7f8fa4;
+    top: 10px;
+    font-size: 14px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+/* ===============================
+   Submit Button
+   =============================== */
+
+.search-submit {
+    position: absolute;
+    right: 15px;
+    top: 6px;
+}
+
+.search-submit:hover {
+    background: #1a8ae0;
+}
+
+.search-submit-icon {
+    width: 18px;
+    height: 18px;
+    color: #ffffff;
+}
+
+/* ===============================
+   Responsive
+   =============================== */
+
+@media (max-width: 1023px) {
+    .search-cross {
+        width: 100%;
+        min-width: 200px;
+        flex: 1;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-cross {
+        width: 100%;
+        min-width: 0;
+        flex: 1;
+        margin: 0;
+        order: 2;
+    }
+
+    .input-wrapper {
+        height: 38px;
+    }
+
+    .search-input {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+
+    .type-selector {
+        padding: 0 12px;
+    }
+
+    .type-selector-link {
+        font-size: 12px;
+        padding: 0 4px;
+    }
+
+    .type-selector-link--active {
+        width: 55px;
+    }
+
+    .search-submit {
+        right: 10px;
+        top: 4px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-submit img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-cross {
+        order: 1;
+        display:none;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .top_bar_content {
+        flex-wrap: wrap;
+    }
+
+    .input-wrapper {
+        height: 36px;
+    }
+
+    .search-input {
+        font-size: 12px;
+        padding: 0 8px;
+    }
+
+    .type-selector {
+        padding: 0 10px;
+    }
+
+    .type-selector-link--active {
+        width: 50px;
+    }
+}

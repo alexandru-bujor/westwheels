@@ -1,0 +1,46 @@
+/* Estimated Cost Side Panel - Matching bid.cars exactly */
+.side-panel.plain-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  width: 100%;
+}
+
+.side-panel.plain-list ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.side-panel.plain-list a {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6c757d;
+  text-decoration: none;
+  transition: all 0.2s;
+  height: auto;
+  min-height: 45px;
+  line-height: 1.4;
+  padding: 12px 10px;
+  background: transparent;
+  white-space: normal;
+}
+
+.side-panel.plain-list a:hover {
+  color: #249af3;
+  background: #36414F;
+}
+
+.side-panel.plain-list a:after {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .side-panel.plain-list ul {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,42 @@
+/* Featured Side Panel - Matching bid.cars exactly */
+.side-panel .section {
+  padding-left: 10px;
+  margin-bottom: 20px;
+  break-inside: avoid-column;
+}
+
+.side-panel .heading {
+  color: #7F8FA4;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.side-panel a:after {
+  display: none;
+}
+
+.side-panel a {
+  padding: 12px 10px;
+  background: transparent;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6c757d;
+  text-decoration: none;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.side-panel a:hover {
+  background: #36414F;
+  color: #249af3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .side-panel .section {
+    margin-bottom: 15px;
+  }
+}

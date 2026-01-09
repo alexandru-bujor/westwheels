@@ -1,0 +1,3252 @@
+/* Car Detail Page Styles - Matching bid.cars exactly */
+
+/* Item Single Page Container */
+.item-single-page {
+  background: #F6F6F8;
+  padding-top: 0;
+  position: relative;
+}
+
+/* Lot Header New - Full Width Topbar */
+.lot-header-new {
+  background: #fff;
+  border-bottom: 1px solid #e9ecef;
+  width: 100%;
+  position: relative;
+}
+
+.item_top_bar {
+  background: #f8f9fa;
+  padding: 8px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.item_top_bar .container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-btn-overflow.new_version {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.back-btn-overflow.new_version a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.back-btn-overflow.new_version .dropdown {
+  margin: 0 5px;
+}
+
+.back-btn-overflow.new_version .dropdown a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.people-watch {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.people-watch b {
+  font-weight: 600;
+  color: #212529;
+}
+
+.people-watch svg {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+}
+
+/* Container Transparent */
+.container.container-transparent {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header Container - Full Width */
+.lot-header-new .container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.lot-header-new .container.container-transparent {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header Content Layout */
+#mobile-start-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 15px 0;
+}
+
+@media (min-width: 992px) {
+  #mobile-start-container {
+    grid-template-columns: 1fr auto;
+    align-items: flex-start;
+  }
+  
+  #mobile-start-container .left-side {
+    flex: 1;
+  }
+  
+  #mobile-start-container .right-side {
+    flex: 0 0 auto;
+    min-width: 250px;
+  }
+}
+
+/* Two Column Layout */
+.two-column-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* iPad and Tablet Landscape (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .two-column-layout {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+  .two-column-layout {
+    grid-template-columns: 60% 40%;
+    gap: 15px;
+    align-items: start;
+  }
+}
+
+.left-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.right-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.lot-wrapper-new {
+  padding: 12px 0;
+}
+
+/* Legacy support for old class names */
+.left-side {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .lot-wrapper-new {
+    padding: 12px 0;
+  }
+}
+
+/* Gallery Styles */
+.gallery {
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  width: 100%;
+  position: relative;
+}
+
+#productContainer {
+  position: relative;
+}
+
+#productCarousel {
+  position: relative;
+  width: 100%;
+}
+
+.f-carousel__viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.f-carousel__track {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.f-carousel__slide {
+  flex: 0 0 100%;
+  width: 100%;
+  position: relative;
+  display: none;
+}
+
+.f-carousel__slide.is-selected {
+  display: block;
+}
+
+.f-carousel__slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 600px;
+}
+
+.top-buttons.new-ver {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+}
+
+.top-buttons.new-ver a {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-buttons.new-ver a svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.f-carousel__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  z-index: 10;
+}
+
+.f-button {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.f-button:hover {
+  background: #fff;
+}
+
+.f-button svg {
+  width: 20px;
+  height: 20px;
+  stroke: #212529;
+  stroke-width: 2;
+}
+
+#galleryThumbs {
+  display: flex;
+  gap: 6px;
+  padding: 10px;
+  overflow-x: auto;
+  background: #fff;
+}
+
+.f-carousel__thumb {
+  flex: 0 0 80px;
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.f-carousel__thumb.active {
+  border-color: #007bff;
+}
+
+.f-carousel__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Extra Information */
+.extra-information {
+  margin-bottom: 10px;
+}
+
+.extra-information .specs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.extra-information .specs span:last-child {
+  font-weight: 500;
+  color: #212529;
+}
+
+/* Lot Name */
+.lot-name {
+  padding: 12px 0;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.title_lot {
+  font-size: 26px;
+  font-weight: 700;
+  color: #212529;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.tags-inline {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.vin_lot {
+  font-size: 16px;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.auction-label {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+
+.auction-label.copart {
+  background: #007bff;
+}
+
+.auction-label.iaai {
+  background: #dc3545;
+}
+
+/* Lot Info Row - Single Row Layout */
+.lot-info-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+  margin: 0 0 12px 0;
+  padding: 0;
+}
+
+.lot-info-row .info-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+.lot-info-row .info-label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6c757d;
+  flex-shrink: 0;
+}
+
+.lot-info-row .info-value {
+  font-size: 14px;
+  font-weight: 400;
+  color: #212529;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.lot-info-row .info-value b {
+  font-weight: 600;
+  color: #007bff;
+}
+
+.lot-info-row .info-value .run-svg {
+  width: 16px;
+  height: 16px;
+  opacity: 0.6;
+  cursor: help;
+}
+
+.info-button-header {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.info-button-header:hover {
+  background: #0056b3;
+  transform: translateY(-1px);
+}
+
+/* Legacy lot-info support */
+.lot-info {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+
+.lot-info li {
+  padding: 6px 0;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 14px;
+  color: #212529;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lot-info li:last-child {
+  border-bottom: none;
+}
+
+.lot-info li span:first-child {
+  font-weight: 600;
+  color: #6c757d;
+  min-width: 140px;
+}
+
+.lot-info li.seller_header span:last-child {
+  background: #e7f3ff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #0056b3;
+}
+
+.lot-info li.doc_header span:last-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.lot-info li.doc_header img.arrw {
+  width: 19px;
+  height: 19px;
+}
+
+/* Delivery Time Box */
+.delivery-time-box {
+  margin-bottom: 10px;
+}
+
+.button.delivery_time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #212529;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.button.delivery_time:hover {
+  background: #e9ecef;
+}
+
+.button.delivery_time .icon {
+  display: flex;
+  align-items: center;
+}
+
+.button.delivery_time .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.button.delivery_time .content span {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 2px;
+}
+
+.choose-item {
+  margin-bottom: 12px;
+}
+
+.choose-item .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.choose-item .button:hover {
+  background: #f8f9fa;
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.choose-item .button .added {
+  display: none;
+}
+
+.choose-item .button.active .to_add {
+  display: none;
+}
+
+.choose-item .button.active .added {
+  display: inline;
+}
+
+/* Bottom Bar */
+.bottom_bar {
+  background: #fff;
+  border-top: 1px solid #e9ecef;
+  padding: 12px 0;
+}
+
+.bottom_bar .container.container-transparent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.bottom_bar .left_side {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button.link-history {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #212529;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.button.link-history:hover {
+  background: #e9ecef;
+}
+
+.button.link-history span {
+  background: #007bff;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.button.link-history svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.box.live_auction_sec {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.header_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.time-frame {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.time-frame span:first-child {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #6c757d;
+}
+
+.time-frame span:last-child {
+  color: #212529;
+  font-weight: 500;
+}
+
+.time-frame .indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.time-frame .indicator.grey {
+  background: #6c757d;
+}
+
+.time-frame .indicator.green {
+  background: #28a745;
+}
+
+/* Box Styles */
+.box {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-color: #dee2e6;
+}
+
+.box .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e9ecef;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.box .header h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #212529;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.box .header .markedby {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+.box .header .flag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #e7f3ff;
+  color: #0056b3;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #b3d9ff;
+}
+
+.box .header h4 svg,
+.box .header h4 img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #007bff;
+}
+
+.box .header h4 svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 123, 255, 0.2));
+}
+
+/* Options List */
+.options-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.options-list .option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 14px;
+  color: #212529;
+}
+
+.options-list .option:last-child {
+  border-bottom: none;
+}
+
+.options-list .option .right-info {
+  font-weight: 600;
+  color: #212529;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.options-list .option .right-info svg {
+  flex-shrink: 0;
+}
+
+.options-list .option .right-info.inline {
+  display: inline-flex;
+}
+
+/* Calculator - Better Column Layout */
+#custom-clearance-calculator {
+  margin-top: 20px;
+}
+
+#custom-clearance-calculator .options-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 0;
+}
+
+/* Responsive calculator grid */
+@media (max-width: 1200px) {
+  #custom-clearance-calculator .options-list,
+  #basic-calculator .options-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#custom-clearance-calculator .options-list .option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  border-radius: 8px;
+  gap: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+#custom-clearance-calculator .options-list .option::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: #007bff;
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+#custom-clearance-calculator .options-list .option:hover {
+  border-color: #007bff;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+#custom-clearance-calculator .options-list .option:hover::before {
+  transform: scaleY(1);
+}
+
+#custom-clearance-calculator .options-list .option .num_wr {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+#custom-clearance-calculator .options-list .option .right-info {
+  width: 100%;
+  justify-content: flex-start;
+  font-size: 16px;
+  font-weight: 700;
+  color: #212529;
+}
+
+#custom-clearance-calculator .options-list .option.with_input {
+  grid-column: 1 / -1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+#custom-clearance-calculator .options-list .option.with_input .num_wr {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#custom-clearance-calculator .options-list .option.with_input .input-group {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 0;
+  margin-left: auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+#custom-clearance-calculator .options-list .option.with_input .input-group.right-info {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+#custom-clearance-calculator .options-list .option .num,
+#basic-calculator .options-list .option .num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #6c757d;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+#custom-clearance-calculator .options-list .option .num-range {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#custom-clearance-calculator .options-list .option .num-range .line {
+  width: 20px;
+  height: 2px;
+  background: #6c757d;
+  display: inline-block;
+}
+
+#basic-calculator {
+  margin-bottom: 20px;
+}
+
+#basic-calculator .options-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 0;
+}
+
+@media (max-width: 1200px) {
+  #basic-calculator .options-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#basic-calculator .options-list .option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  gap: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+#basic-calculator .options-list .option::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: #28a745;
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+#basic-calculator .options-list .option:hover {
+  border-color: #28a745;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.15);
+  transform: translateY(-2px);
+}
+
+#basic-calculator .options-list .option:hover::before {
+  transform: scaleY(1);
+}
+
+#basic-calculator .options-list .option .num {
+  position: static;
+  margin-bottom: 4px;
+}
+
+#basic-calculator .options-list .option .right-info {
+  width: 100%;
+  justify-content: flex-start;
+  font-size: 16px;
+  font-weight: 700;
+  color: #212529;
+  margin-top: 4px;
+}
+
+/* Subtotal Section */
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 10px;
+  border: 2px solid #dee2e6;
+}
+
+.subtotal .option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #212529;
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+.subtotal .option .num {
+  background: #007bff;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.subtotal .option .line {
+  width: 30px;
+  height: 2px;
+  background: #6c757d;
+}
+
+.subtotal .price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #007bff;
+}
+
+.subtotal.full-total {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  border-color: #007bff;
+}
+
+.subtotal.full-total .option {
+  color: #fff;
+}
+
+.subtotal.full-total .option .num {
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.subtotal.full-total .option .line {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.subtotal.full-total .price {
+  color: #fff;
+  font-size: 28px;
+}
+
+/* Footer Section */
+.box .footer {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #6c757d;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #495057;
+}
+
+.box .footer a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.box .footer a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.copy-lot,
+.copy-vin {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.copy-lot svg,
+.copy-vin svg {
+  color: #6c757d;
+  width: 16px;
+  height: 16px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  flex-shrink: 0;
+}
+
+.copy-lot:hover svg,
+.copy-vin:hover svg {
+  opacity: 1;
+}
+
+.tips-question {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: help;
+}
+
+.tips-question.yellow_alert {
+  background: #e7f3ff;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.tips-question.green_alert {
+  background: #d4edda;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.option.sale_doc .right-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* Sale Document Preview Link */
+.option.sale_doc.img_tltp_wrapper {
+  position: relative;
+  margin-top: 10px;
+}
+
+.img_tltp_preview {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  gap: 5px;
+  color: #000;
+  margin: 0;
+  text-decoration: none;
+  border: 1px solid #e5e5e5;
+  transition: all 0.3s ease;
+}
+
+.img_tltp_preview:hover {
+  text-decoration: none;
+  border-color: #219af3;
+  box-shadow: 0px 0px 0px 1px #219af3;
+}
+
+.img_tltp_preview span {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.img_tltp_preview img {
+  width: 16px;
+  height: 16px;
+}
+
+.rotation_anim {
+  position: relative;
+  overflow: hidden;
+}
+
+.rotation_anim::after {
+  position: absolute;
+  content: '';
+  background: #ffffff;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  box-shadow: 0 0px 0px 1px inset #E6EDF6;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+/* Expert Message */
+.expert_message {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 12px;
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.expert_message .image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.expert_message .content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #212529;
+  margin: 0 0 5px 0;
+}
+
+.expert_message .content h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6c757d;
+  margin: 0 0 10px 0;
+}
+
+.expert_message .content p {
+  font-size: 14px;
+  color: #212529;
+  margin: 0 0 10px 0;
+  line-height: 1.5;
+}
+
+.expert_message .content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Bidding Section */
+#bidding-info {
+  margin-top: 0;
+}
+
+.lot-price-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 12px;
+}
+
+.lot-price-info > div {
+  flex: 1;
+}
+
+.field-name {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #212529;
+}
+
+.price.current_bid {
+  color: #007bff;
+}
+
+.price.max_bid.black {
+  color: #212529;
+}
+
+.price-section.closing-bid {
+  margin-bottom: 12px;
+}
+
+.field-wr {
+  margin-bottom: 10px;
+}
+
+.field-desc {
+  margin-top: 5px;
+}
+
+.bid-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.bid-status img {
+  vertical-align: middle;
+}
+
+.bid-status .indicator {
+  vertical-align: middle;
+}
+
+.bid-status.status-green {
+  color: #28a745;
+}
+
+.input-price-wr {
+  margin-top: 10px;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: stretch;
+  width: 100%;
+}
+
+.input-group-prepend,
+.input-group-append {
+  display: flex;
+  align-items: stretch;
+}
+
+.input-group-text {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 44px;
+  flex-shrink: 0;
+}
+
+.input-group-text svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.input-group-text.minus-btn {
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.input-group-text.plus-btn {
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.input-group-text:hover {
+  background: #e9ecef;
+}
+
+.input-group-text:active {
+  background: #dee2e6;
+  transform: scale(0.98);
+}
+
+.form-control {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #dee2e6;
+  border-left: none;
+  border-right: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #212529;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-transparent.bid {
+  background: #28a745;
+  color: #fff;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.btn-transparent.bid:hover {
+  background: #218838;
+}
+
+.btn-default {
+  background: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.btn-default:hover {
+  background: #0056b3;
+}
+
+.small-info {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.small-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.small-info a:hover {
+  text-decoration: underline;
+}
+
+/* Buy Now Wrapper */
+.buy-now-wr {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 12px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy-now-wr .field-name {
+  margin-bottom: 5px;
+}
+
+.buy-now-wr .price {
+  font-size: 20px;
+  color: #28a745;
+}
+
+/* Show More/Less */
+.show-more-specs,
+.show-more-additional-services {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.show-more-specs:hover,
+.show-more-additional-services:hover {
+  text-decoration: underline;
+}
+
+.show-more-specs .num,
+.show-more-additional-services .num {
+  background: #007bff;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Additional Services */
+.additional_services_wr {
+  margin-top: 12px;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-check-input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.form-check-label {
+  font-size: 14px;
+  color: #212529;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.num {
+  background: #6c757d;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.num.num-large {
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+}
+
+.lit.msg {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 10px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+/* Start Code */
+.option.start_code[data-start-code="Run / Drive"],
+.option.start_code[data-start-code="Run and Drive"] {
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* iPad Portrait (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .two-column-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .lot-wrapper-new {
+    padding: 15px 0;
+  }
+  
+  .title_lot {
+    font-size: 28px;
+  }
+  
+  .lot-info-row {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  
+  .lot-info-row .info-item {
+    margin-right: 25px;
+    margin-bottom: 8px;
+  }
+  
+  .calculator-section-fullwidth {
+    padding: 25px 0;
+  }
+  
+  .final_price_estimator {
+    padding: 20px;
+  }
+  
+  #custom-clearance-calculator .options-list,
+  #basic-calculator .options-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .two-column-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .lot-wrapper-new {
+    padding: 12px 0;
+  }
+  
+  .left-side,
+  .right-side {
+    flex: 1;
+    max-width: 100%;
+  }
+  
+  .title_lot {
+    font-size: 24px;
+  }
+  
+  .lot-price-info {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .buy-now-wr {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .bottom_bar .left_side {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #mobile-start-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .calculator-section-fullwidth {
+    padding: 20px 0;
+  }
+}
+
+/* Calculator Section - Full Width */
+.calculator-section-fullwidth {
+  background: #F6F6F8;
+  padding: 30px 0;
+  margin-top: 12px;
+  border-top: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* When calculator is inside col1 lot-details, adjust spacing */
+.col1.lot-details .calculator-section-fullwidth {
+  margin-top: 12px;
+  margin-left: -12px;
+  margin-right: -12px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.calculator-section-fullwidth .container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* When nested in col1, remove container padding to avoid double padding */
+.col1.lot-details .calculator-section-fullwidth .container.container-transparent {
+  padding: 0;
+  max-width: 100%;
+}
+
+/* Final Price Estimator */
+.final_price_estimator {
+  margin-top: 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  border: 1px solid #e9ecef;
+}
+
+.final_price_estimator .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.calculator-selectors {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.select-your-destination {
+  padding: 8px 14px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  color: #212529;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.select-your-destination:hover {
+  border-color: #007bff;
+}
+
+.select-your-destination:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.select-your-currency {
+  padding: 6px 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 14px;
+  background: #fff;
+  color: #212529;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.select-your-currency:hover {
+  border-color: #007bff;
+}
+
+.select-your-currency:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.estimator-wr {
+  margin-bottom: 12px;
+}
+
+.price_tabs {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 6px;
+}
+
+.price_tabs li {
+  margin: 0;
+  flex: 1;
+}
+
+.price_tabs a {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: transparent;
+  position: relative;
+}
+
+.price_tabs a:hover {
+  color: #007bff;
+  background: rgba(0, 123, 255, 0.1);
+}
+
+.price_tabs a.active {
+  color: #fff;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.estimator_main_price_wr {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.estimator-price-wr {
+  background: #fff;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.estimator-price-wr::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.estimator-price-wr:hover {
+  border-color: #007bff;
+  box-shadow: 0 8px 24px rgba(0, 123, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.estimator-price-wr:hover::before {
+  transform: scaleX(1);
+}
+
+.estimator-price-wr.total {
+  text-align: center;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  border-color: #007bff;
+  color: #fff;
+  grid-column: 1 / -1;
+}
+
+.estimator-price-wr.total::before {
+  display: none;
+}
+
+.estimator-price-wr.total h4 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 10px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.estimator-price-wr.total span {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.estimator-price-wr.purchase,
+.estimator-price-wr.declared {
+  text-align: center;
+}
+
+.estimator-price-wr.purchase h4,
+.estimator-price-wr.declared h4 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #212529;
+  margin: 0 0 10px 0;
+}
+
+.estimator-price-wr.purchase span,
+.estimator-price-wr.declared span {
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.estimator-price-wr.total span {
+  font-size: 14px;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.estimator-price-wr.total span svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.estimator-price-wr.purchase span,
+.estimator-price-wr.declared span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.estimator-price-wr.purchase span svg,
+.estimator-price-wr.declared span svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.estimator-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.estimator-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 14px;
+  color: #212529;
+}
+
+.estimator-list li:last-child {
+  border-bottom: none;
+}
+
+.estimator-list li .left {
+  color: #6c757d;
+}
+
+.estimator-list li .right {
+  font-weight: 600;
+  color: #212529;
+}
+
+/* PSA Tabs Content */
+.psa-tabs-content {
+  background: #fff;
+  padding: 30px 0;
+  margin-top: 30px;
+}
+
+/* Sales History */
+#sales-history {
+  margin-bottom: 30px;
+}
+
+.sales-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.sales-history-table th,
+.sales-history-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 14px;
+}
+
+.sales-history-table th {
+  background: #f8f9fa;
+  font-weight: 700;
+  color: #212529;
+}
+
+.sales-history-table td {
+  color: #6c757d;
+}
+
+.sales-history-table .status-sold {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.sales-history-table .status-not-sold {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+/* Similar Cars */
+#similar-cars {
+  margin-bottom: 30px;
+}
+
+.similar-cars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+/* FAQ Section */
+.info_blocks {
+  padding: 30px 0;
+}
+
+.faq-section {
+  margin-bottom: 25px;
+}
+
+.faq-section h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #212529;
+  margin: 0 0 12px 0;
+}
+
+.faq-item {
+  margin-bottom: 12px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.faq-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212529;
+  margin: 0 0 8px 0;
+}
+
+.faq-item p {
+  font-size: 14px;
+  color: #6c757d;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Sticky Elements */
+[data-sticky-container] {
+  position: relative;
+}
+
+[data-sticky-class="is-sticky"] {
+  position: sticky;
+  top: 100px;
+}
+
+/* Disable sticky on mobile and iPad */
+@media (max-width: 1023px) {
+  [data-sticky-container] {
+    position: static;
+  }
+
+  [data-sticky-class="is-sticky"] {
+    position: static;
+  }
+
+  .scroll-wrapper {
+    position: static;
+  }
+}
+
+/* Scroll Wrapper */
+.scroll-wrapper {
+  position: relative;
+}
+
+/* Col1 */
+.col1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Ensure right column content is properly arranged */
+.right-column .col1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  width: 100%;
+}
+
+/* Icon styling consistency */
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Ensure all sections use full width */
+#main-info,
+#secondary-info,
+#tertiary-info,
+#bidding-info,
+#final-price-estimator,
+#basic-calculator,
+#custom-clearance-calculator,
+/* Calculator Info Box */
+#calculator-info,
+.box.box_info {
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 20px 0;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.box.box_info svg {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  width: 32px;
+  height: 32px;
+  color: #007bff;
+  flex-shrink: 0;
+}
+
+.box.box_info .close_mess {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.box.box_info .close_mess:hover {
+  background: #fff;
+  transform: rotate(90deg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.box.box_info p {
+  margin: 0;
+  padding-left: 48px;
+  padding-right: 48px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #212529;
+  font-weight: 400;
+}
+
+.box.box_info p span {
+  font-weight: 700;
+  color: #007bff;
+  background: rgba(0, 123, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+#calculator-info,
+.additional_services_wr {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Lot Details */
+.lot-details {
+  position: relative;
+}
+
+#box-options {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+#box-options .content {
+  display: flex;
+  gap: 0;
+}
+
+#box-options .option {
+  flex: 1;
+  padding: 0;
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+
+#box-options .option a {
+  display: block;
+  padding: 12px 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+}
+
+#box-options .option a.active {
+  color: #007bff;
+  border-bottom-color: #007bff;
+}
+
+#box-options .option a:hover {
+  color: #007bff;
+}
+
+/* Main Info, Secondary Info, Tertiary Info */
+#main-info,
+#secondary-info,
+#tertiary-info {
+  margin-bottom: 12px;
+}
+
+/* Mobile Version */
+.mobile-version.status {
+  display: none;
+  padding: 10px 15px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 14px;
+  color: #6c757d;
+  text-align: center;
+  font-weight: 600;
+}
+
+.mobile-version.status.gray {
+  background: #6c757d;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .mobile-version.status {
+    display: block;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 575px) {
+  .mobile-version.status {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+/* ============================================
+   MOBILE RESPONSIVE STYLES
+   ============================================ */
+
+/* Tablet and below (max-width: 991px) */
+@media (max-width: 991px) {
+  .container.container-transparent {
+    padding: 0 12px;
+  }
+
+  .lot-header-new .container,
+  .lot-header-new .container.container-transparent {
+    padding: 0 12px;
+  }
+
+  .item_top_bar {
+    padding: 6px 0;
+  }
+
+  .item_top_bar .container {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .back-btn-overflow.new_version {
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .back-btn-overflow.new_version .dropdown {
+    margin: 0 3px;
+  }
+
+  .people-watch {
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+
+  .people-watch svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  #mobile-start-container {
+    padding: 12px 0;
+    gap: 12px;
+  }
+
+  .lot-name {
+    padding: 10px 0;
+  }
+
+  .title_lot {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .tags-inline {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .vin_lot {
+    font-size: 14px;
+  }
+
+  .auction-label {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .title-row {
+    gap: 10px;
+  }
+
+  .title_lot {
+    font-size: 22px;
+  }
+
+  .vin_lot {
+    font-size: 14px;
+  }
+
+  .lot-info-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .lot-info-row .info-item {
+    margin-right: 0;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+  }
+
+  .lot-info-row .info-label,
+  .lot-info-row .info-value {
+    font-size: 13px;
+  }
+
+  .info-button-header {
+    padding: 5px 12px;
+    font-size: 13px;
+  }
+
+  .lot-info li {
+    padding: 6px 0;
+    font-size: 13px;
+    flex-wrap: wrap;
+  }
+
+  .lot-info li span:first-child {
+    min-width: 100px;
+    font-size: 13px;
+  }
+
+  .calculator-section-fullwidth {
+    padding: 20px 0;
+  }
+  
+  #custom-clearance-calculator .options-list,
+  #basic-calculator .options-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .calculator-selectors {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+  
+  .select-your-destination,
+  .select-your-currency {
+    width: 100%;
+  }
+
+  .gallery {
+    margin-bottom: 10px;
+  }
+
+  .f-carousel__slide img {
+    max-height: 400px;
+  }
+
+  .f-carousel__thumb {
+    flex: 0 0 60px;
+    width: 60px;
+    height: 60px;
+  }
+
+  #galleryThumbs {
+    padding: 8px;
+    gap: 6px;
+  }
+
+  .top-buttons.new-ver {
+    top: 10px;
+    right: 10px;
+  }
+
+  .top-buttons.new-ver a {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .top-buttons.new-ver a svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .box {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .box .header h4 {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .box .header h4 svg,
+  .box .header h4 img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .options-list .option {
+    padding: 8px 0;
+    font-size: 13px;
+    flex-wrap: wrap;
+  }
+
+  .options-list .option .right-info {
+    font-size: 13px;
+    margin-top: 4px;
+  }
+
+  .lot-price-info {
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 0;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .input-group {
+    margin-bottom: 10px;
+  }
+
+  .form-control {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+
+  .input-group-text {
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .buy-now-wr {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .buy-now-wr .price {
+    font-size: 18px;
+  }
+
+  .final_price_estimator .header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .price_tabs {
+    gap: 8px;
+    overflow-x: auto;
+  }
+
+  .price_tabs a {
+    padding: 6px 12px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .estimator-price-wr.total {
+    padding: 10px;
+  }
+
+  .estimator-price-wr.total h4 {
+    font-size: 24px;
+  }
+
+  .estimator-list li {
+    padding: 6px 0;
+    font-size: 13px;
+  }
+
+  .expert_message {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .expert_message .image img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .expert_message .content h3 {
+    font-size: 15px;
+  }
+
+  .expert_message .content h4 {
+    font-size: 13px;
+  }
+
+  .expert_message .content p {
+    font-size: 13px;
+  }
+
+  .bottom_bar {
+    padding: 10px 0;
+  }
+
+  .bottom_bar .left_side {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .button.link-history {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 15px;
+  }
+
+  .box.live_auction_sec {
+    padding: 10px 12px;
+  }
+
+  .psa-tabs-content {
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+
+  .info_blocks {
+    padding: 20px 0;
+  }
+
+  .faq-section {
+    margin-bottom: 20px;
+  }
+
+  .faq-item {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Mobile (max-width: 767px) */
+@media (max-width: 767px) {
+  .mobile-version.status {
+    display: block;
+  }
+
+  .container.container-transparent {
+    padding: 0 10px;
+  }
+
+  .lot-header-new .container,
+  .lot-header-new .container.container-transparent {
+    padding: 0 10px;
+  }
+
+  .item_top_bar {
+    padding: 5px 0;
+  }
+
+  .item_top_bar .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .back-btn-overflow.new_version {
+    font-size: 11px;
+    width: 100%;
+  }
+
+  .back-btn-overflow.new_version span {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+
+  .people-watch {
+    font-size: 11px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  #mobile-start-container {
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .lot-name {
+    padding: 8px 0;
+  }
+
+  .title_lot {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .tags-inline {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .vin_lot {
+    font-size: 13px;
+  }
+
+  .lot-info-row {
+    gap: 6px;
+  }
+
+  .lot-info-row .info-item {
+    margin-bottom: 3px;
+  }
+
+  .lot-info-row .info-label,
+  .lot-info-row .info-value {
+    font-size: 12px;
+  }
+
+  .lot-info {
+    margin-bottom: 10px;
+  }
+
+  .lot-info li {
+    padding: 5px 0;
+    font-size: 12px;
+  }
+
+  .lot-info li span:first-child {
+    min-width: 90px;
+    font-size: 12px;
+  }
+
+  #custom-clearance-calculator .options-list,
+  #basic-calculator .options-list {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  #custom-clearance-calculator .options-list .option,
+  #basic-calculator .options-list .option {
+    padding: 10px;
+  }
+
+  .gallery {
+    border-radius: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 20px);
+  }
+
+  .f-carousel__slide img {
+    max-height: 300px;
+  }
+
+  .f-carousel__thumb {
+    flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+  }
+
+  #galleryThumbs {
+    padding: 6px;
+    gap: 4px;
+  }
+
+  .top-buttons.new-ver {
+    top: 8px;
+    right: 8px;
+  }
+
+  .top-buttons.new-ver a {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+
+  .f-carousel__nav {
+    padding: 0 8px;
+  }
+
+  .f-button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .f-button svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .box {
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 0;
+  }
+
+  .box .header h4 {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .options-list .option {
+    padding: 6px 0;
+    font-size: 12px;
+  }
+
+  .options-list .option .right-info {
+    font-size: 12px;
+    word-break: break-word;
+  }
+
+  .lot-price-info {
+    padding: 8px 0;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .field-name {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .input-group {
+    margin-bottom: 8px;
+  }
+
+  .form-control {
+    padding: 8px 10px;
+    font-size: 15px;
+  }
+
+  .input-group-text {
+    padding: 8px;
+  }
+
+  .input-group-text svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .buy-now-wr {
+    padding: 8px;
+  }
+
+  .buy-now-wr .price {
+    font-size: 16px;
+  }
+
+  .final_price_estimator .header {
+    margin-bottom: 8px;
+  }
+
+  .price_tabs {
+    gap: 6px;
+  }
+
+  .price_tabs a {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .estimator-price-wr.total {
+    padding: 8px;
+  }
+
+  .estimator-price-wr.total h4 {
+    font-size: 20px;
+  }
+
+  .estimator-price-wr.total span {
+    font-size: 12px;
+  }
+
+  .estimator-list li {
+    padding: 5px 0;
+    font-size: 12px;
+  }
+
+  .expert_message {
+    padding: 8px;
+  }
+
+  .expert_message .image img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .expert_message .content h3 {
+    font-size: 14px;
+  }
+
+  .expert_message .content h4 {
+    font-size: 12px;
+  }
+
+  .expert_message .content p {
+    font-size: 12px;
+  }
+
+  .bottom_bar {
+    padding: 8px 0;
+  }
+
+  .button.link-history {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .button.link-history svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .box.live_auction_sec {
+    padding: 8px 10px;
+  }
+
+  .time-frame {
+    font-size: 12px;
+  }
+
+  .sales-history-table {
+    font-size: 12px;
+  }
+
+  .sales-history-table th,
+  .sales-history-table td {
+    padding: 8px 6px;
+    font-size: 12px;
+  }
+
+  .similar-cars-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .psa-tabs-content {
+    padding: 15px 0;
+    margin-top: 15px;
+  }
+
+  .info_blocks {
+    padding: 15px 0;
+  }
+
+  .faq-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .faq-item {
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+
+  .faq-item h4 {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .faq-item p {
+    font-size: 12px;
+  }
+
+  #box-options .option a {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .select-your-currency,
+  .select-your-location {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .subtotal {
+    padding: 8px 0;
+  }
+
+  .footer {
+    font-size: 11px;
+    padding: 8px;
+  }
+}
+
+/* Small Mobile (max-width: 575px) */
+@media (max-width: 575px) {
+  .container.container-transparent {
+    padding: 0 8px;
+  }
+
+  .lot-header-new .container,
+  .lot-header-new .container.container-transparent {
+    padding: 0 8px;
+  }
+
+  .item_top_bar {
+    padding: 4px 0;
+  }
+
+  .back-btn-overflow.new_version {
+    font-size: 10px;
+  }
+
+  .people-watch {
+    font-size: 10px;
+  }
+
+  .people-watch svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  #mobile-start-container {
+    padding: 8px 0;
+    gap: 8px;
+  }
+
+  .lot-name {
+    padding: 6px 0;
+  }
+
+  .title_lot {
+    font-size: 18px;
+  }
+
+  .tags-inline {
+    gap: 4px;
+  }
+
+  /* Touch-friendly buttons on mobile */
+  .btn,
+  .button,
+  .input-group-text,
+  .f-button {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    touch-action: manipulation;
+  }
+
+  /* Prevent text selection on mobile for better UX */
+  .top-buttons.new-ver a,
+  .button.link-history,
+  .btn {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Better scrolling on mobile */
+  #galleryThumbs {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  /* Improve form inputs on mobile */
+  .form-control,
+  .select-your-currency,
+  .select-your-location {
+    font-size: 16px; /* Prevents zoom on iOS */
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .vin_lot {
+    font-size: 12px;
+  }
+
+  .auction-label {
+    padding: 3px 6px;
+    font-size: 11px;
+  }
+
+  .lot-info li {
+    padding: 4px 0;
+    font-size: 11px;
+  }
+
+  .lot-info li span:first-child {
+    min-width: 80px;
+    font-size: 11px;
+  }
+
+  .gallery {
+    margin-left: -8px;
+    margin-right: -8px;
+    width: calc(100% + 16px);
+  }
+
+  .f-carousel__slide img {
+    max-height: 250px;
+  }
+
+  .f-carousel__thumb {
+    flex: 0 0 45px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .top-buttons.new-ver a {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+
+  .f-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .f-button svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .box {
+    padding: 6px;
+    margin-bottom: 6px;
+  }
+
+  .box .header h4 {
+    font-size: 13px;
+  }
+
+  .options-list .option {
+    padding: 5px 0;
+    font-size: 11px;
+  }
+
+  .options-list .option .right-info {
+    font-size: 11px;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+
+  .field-name {
+    font-size: 11px;
+  }
+
+  .form-control {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+
+  .input-group-text {
+    padding: 6px;
+  }
+
+  .btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .buy-now-wr .price {
+    font-size: 14px;
+  }
+
+  .estimator-price-wr.total h4 {
+    font-size: 18px;
+  }
+
+  .price_tabs {
+    gap: 4px;
+  }
+
+  .price_tabs a {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .expert_message {
+    padding: 6px;
+  }
+
+  .expert_message .image img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .expert_message .content h3 {
+    font-size: 13px;
+  }
+
+  .expert_message .content p {
+    font-size: 11px;
+  }
+
+  .button.link-history {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
+  .button.link-history svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .similar-cars-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .faq-section h3 {
+    font-size: 16px;
+  }
+
+  .faq-item h4 {
+    font-size: 13px;
+  }
+
+  .faq-item p {
+    font-size: 11px;
+  }
+
+  #box-options .option a {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .select-your-currency,
+  .select-your-location {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+
+  .footer {
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  .num {
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+  }
+
+  .num.num-large {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+
+  .copy-lot svg,
+  .copy-vin svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .tips-question svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* Full width buttons on mobile */
+  .btn,
+  .button.delivery_time,
+  .choose-item .button {
+    width: 100%;
+  }
+
+  /* Stack price info vertically on mobile */
+  .lot-price-info > div {
+    width: 100%;
+  }
+
+  /* Better spacing for calculator on mobile */
+  .estimator-price-wr {
+    margin-bottom: 10px;
+  }
+
+  .estimator-price-wr.purchase,
+  .estimator-price-wr.declared {
+    margin-bottom: 8px;
+  }
+
+  /* Stack tabs vertically on very small screens */
+  .price_tabs {
+    flex-direction: column;
+    border-bottom: none;
+  }
+
+  .price_tabs li {
+    width: 100%;
+  }
+
+  .price_tabs a {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #e9ecef;
+    border-radius: 0;
+  }
+
+  .price_tabs a.active {
+    border-bottom-color: #007bff;
+  }
+
+  /* Better image carousel on mobile */
+  .f-carousel__slide {
+    touch-action: pan-y;
+  }
+
+  /* Hide desktop-only elements */
+  .desktop-only {
+    display: none !important;
+  }
+
+  /* Show mobile-only elements */
+  .mobile-only {
+    display: block !important;
+  }
+}
+
+/* Extra small devices (max-width: 375px) */
+@media (max-width: 375px) {
+  .container.container-transparent {
+    padding: 0 6px;
+  }
+
+  .lot-header-new .container,
+  .lot-header-new .container.container-transparent {
+    padding: 0 6px;
+  }
+
+  .title_lot {
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .estimator-price-wr.total h4 {
+    font-size: 16px;
+  }
+
+  .box {
+    padding: 5px;
+  }
+
+  .options-list .option {
+    font-size: 10px;
+  }
+
+  .form-control {
+    font-size: 14px;
+  }
+}
+

@@ -1,0 +1,92 @@
+/* Button Component Styles */
+.button {
+  font-weight: 600;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+.button:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Variants */
+.button--primary {
+  background-color: #249af3;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+  color: var(--white);
+}
+
+.button--primary:hover {
+  background-color: rgb(43, 53, 65);
+}
+
+.button--primary:focus {
+  box-shadow: 0 0 0 2px rgba(36, 154, 243, 0.5);
+}
+
+.button--secondary {
+  background-color: #249af3;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+  color: var(--white);
+}
+
+.button--secondary:hover {
+  background-color: rgb(43, 53, 65);
+}
+
+.button--secondary:focus {
+  box-shadow: 0 0 0 2px rgba(52, 58, 64, 0.5);
+}
+
+.button--outline {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.button--outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button--outline:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Button Sizes */
+.button--sm {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.button--md {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.button--lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+

@@ -1,0 +1,235 @@
+/* Navigation Menu Component Styles - Matching bid.cars exactly */
+.navigation {
+  flex: 1;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-link {
+  color: #fff;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  transition: all 0.3s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.menu-item.devided .menu-link,
+.menu-item.devided a {
+  border-right: 1px solid #435061;
+}
+
+.menu-link:hover,
+.menu-item.devided .menu-link:hover {
+  background: #36414F;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-link-icon {
+  width: 11px;
+  height: 7px;
+  margin-left: 4px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.menu-link:hover .menu-link-icon {
+  opacity: 1;
+}
+
+.menu-link--simple {
+  display: flex;
+}
+
+.mega-menu {
+  position: relative;
+}
+
+.mega-menu-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Simple Dropdown Menu (How it works, etc.) */
+.menu-dropdown-wide {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--gray-dark-blue);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 6px 6px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  min-width: 170px;
+  overflow: hidden;
+}
+
+.menu-item.group:hover .menu-dropdown-wide,
+.menu-item.child:hover .menu-dropdown-wide {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-dropdown-wide li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-dropdown-wide li:last-child {
+  border-bottom: none;
+}
+
+.menu-dropdown-link {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s;
+  padding: 0 20px;
+  height: 49px;
+  line-height: 49px;
+  white-space: nowrap;
+}
+
+.menu-dropdown-link:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile Menu Styles */
+.mobile-menu-content .menu {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  width: 100%;
+}
+
+.mobile-menu-content .menu-item {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu-content .menu-item:last-child {
+  border-bottom: none;
+}
+
+.mobile-menu-content .menu-link {
+  width: 100%;
+  padding: 16px 20px;
+  height: auto;
+  line-height: 1.5;
+  justify-content: space-between;
+  border-right: none !important;
+}
+
+.mobile-menu-content .menu-link:hover {
+  background: #36414F;
+}
+
+.mobile-menu-content .menu-dropdown-wide {
+  position: static;
+  opacity: 1;
+  visibility: visible;
+  box-shadow: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.2);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.mobile-menu-content .menu-item.child.active .menu-dropdown-wide,
+.mobile-menu-content .menu-item.group.active .menu-dropdown-wide {
+  max-height: 500px;
+}
+
+.mobile-menu-content .menu-item.mega-menu.active .dropdown {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.mobile-menu-content .menu-dropdown-link {
+  padding: 12px 20px 12px 40px;
+  height: auto;
+  line-height: 1.5;
+}
+
+.mobile-menu-content .quick_links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.mobile-menu-content .quick_links li {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu-content .quick_links li:last-child {
+  border-bottom: none;
+}
+
+.mobile-menu-content .quick_links li a {
+  width: 100%;
+  padding: 16px 20px;
+  border-right: none !important;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .links_line .menu {
+    gap: 0;
+  }
+
+  .links_line .menu-link {
+    padding: 14px 16px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .links_line .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .links_line .menu-item {
+    width: 100%;
+  }
+
+  .links_line .menu-link {
+    width: 100%;
+    padding: 12px 16px;
+    height: auto;
+    line-height: 1.5;
+  }
+}

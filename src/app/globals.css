@@ -1,8 +1,45 @@
 @import "tailwindcss";
 
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --swiper-navigation-size: 44px;
+}
+:root {
+  --swiper-theme-color: #007aff;
+}
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+    --gray-dark-blue:#334150;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 619px;
+  --breakpoint-sm: 620px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: 'Lato', sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 @theme inline {
@@ -12,15 +49,188 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Mobile Performance Optimizations */
+@media (max-width: 768px) {
+  /* Optimize animations and transitions for mobile */
+  * {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  /* Reduce motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Better scrolling performance */
+  body {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: contain;
+  }
+
+  /* Prevent pull-to-refresh on iOS (optional) */
+  body {
+    overscroll-behavior: contain;
+  }
+}
+
+/* Bid.cars Header Styles - Using CSS Variables */
+.header_top {
+  background-color: var(--header-bg);
+  color: var(--white);
+}
+
+.top_bar {
+  border-bottom: 1px solid var(--header-border);
+}
+
+.links_line {
+  border-top: 1px solid var(--header-border);
+}
+
+.navigation .menu li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navigation .menu li a:hover {
+  color: var(--primary-blue);
+}
+
+.quick_links li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.quick_links li a:hover {
+  color: var(--primary-blue);
+}
+
+/* Mobile-First: Base Styles */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  /* Prevent horizontal scroll on mobile */
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Home Page Wrapper - Mobile Optimized */
+.home-page-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.home-page-main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Offers Section Styles - Mobile First */
+section#offers,
+.offers-section {
+  background: #F6F6F8;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+section#offers .container,
+.offers-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  section#offers,
+  .offers-section {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  section#offers .container,
+  .offers-container {
+    padding: 0 15px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  section#offers,
+  .offers-section {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  section#offers .container,
+  .offers-container {
+    max-width: 1600px;
+    padding: 0 15px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1600px) {
+  section#offers .container,
+  .offers-container {
+    max-width: 1600px;
+    padding: 0 20px;
+  }
+}
+
+/* Small Mobile Optimizations */
+@media (max-width: 480px) {
+  section#offers,
+  .offers-section {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  section#offers .container,
+  .offers-container {
+    padding: 0 10px;
+  }
 }
