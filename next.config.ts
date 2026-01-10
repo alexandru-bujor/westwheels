@@ -19,9 +19,8 @@ const nextConfig: NextConfig = {
     ],
   },
   // Set basePath only for GitHub Pages deployment (not for local builds)
-  // Uncomment and set your repository name if deploying to a subdirectory:
-  // basePath: isGitHubPages ? `/${repoName}` : '',
-  // assetPrefix: isGitHubPages ? `/${repoName}` : '',
+  basePath: isGitHubPages ? `/${repoName}` : '',
+  assetPrefix: isGitHubPages ? `/${repoName}` : '',
   trailingSlash: true, // Recommended for GitHub Pages
 };
 
